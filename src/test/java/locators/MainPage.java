@@ -16,7 +16,7 @@ public class MainPage {
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
-        this.wait=new WebDriverWait(this.driver,15);
+        this.wait=new WebDriverWait(this.driver,20);
         PageFactory.initElements(driver,this);
     }
     @FindBy(id="login-username")

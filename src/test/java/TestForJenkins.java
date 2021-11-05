@@ -39,14 +39,14 @@ public class TestForJenkins {
 
     }
 
-    @Test
-    public void findByLinkTest()  {
-        mainPage.openShutterstockZaretsky();
-        mainPage.wait.until(ExpectedConditions.elementToBeClickable(mainPage.buttonNext));
-        mainPage.buttonNext.click();
-        System.out.println("Test findByLinkText: The test finds the necessary" +
-                " link for the \"Далее\" button, clicks on the button and goes to the next page");
-    }
+//    @Test
+//    public void findByLinkTest()  {
+//        mainPage.openShutterstockZaretsky();
+//        mainPage.wait.until(ExpectedConditions.elementToBeClickable(mainPage.buttonNext));
+//        mainPage.buttonNext.click();
+//        System.out.println("Test findByLinkText: The test finds the necessary" +
+//                " link for the \"Далее\" button, clicks on the button and goes to the next page");
+//    }
     @Test
     public void findByCssSelectorTest()  {
         mainPage.openAkniga();
@@ -75,11 +75,11 @@ public class TestForJenkins {
         mainPage.wait.until(ExpectedConditions.visibilityOf(mainPage.searchByAttribute));
         System.out.println("Test findByXpathAttributeTest: The test finds the required alt attribute Image");
     }
-    @Test
-    public void findByXpathTextTest() {
-        mainPage.openShutterstockZaretskyIMG();
-        mainPage.wait.until(ExpectedConditions.textToBePresentInElement(mainPage.searchByText,"Информация"));
-        mainPage.searchByText.click();
-        System.out.println("Test findByXpathTextTest: The test found the 'Information' button and opened the page");
-    }
+//    @Test
+//    public void findByXpathTextTest() {
+//        mainPage.openShutterstockZaretskyIMG();
+//        mainPage.wait.until(ExpectedConditions.textToBePresentInElement(mainPage.searchByText,"Информация"));
+//        mainPage.searchByText.click();
+//        System.out.println("Test findByXpathTextTest: The test found the 'Information' button and opened the page");
+//    }
 }
